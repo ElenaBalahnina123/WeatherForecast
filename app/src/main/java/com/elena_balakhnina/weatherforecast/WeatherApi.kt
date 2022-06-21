@@ -24,7 +24,7 @@ interface RetrofitService {
     @GET("weather")
     suspend fun getWeather(
         @Query("lat") latitude: Float,
-        @Query("lng") longitude: Float,
+        @Query("lon") longitude: Float,
         @Query("appid") appId: String,
         @Query("lang") lang: String,
         @Query("units") units: String
